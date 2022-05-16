@@ -1,0 +1,1 @@
+https://github.com/hedwigjr/cssMemSlider.git
