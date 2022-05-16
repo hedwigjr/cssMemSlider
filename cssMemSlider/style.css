@@ -7,7 +7,7 @@ body {
 .containerForSlider {
     margin: 0 auto;
     max-width: 1000px;
-    max-height: 520px;
+    max-height: 720px;
     overflow: hidden;
 }
 .slide{
@@ -49,6 +49,7 @@ p {
 }
 .bar:hover {
     cursor: pointer;
+    
 }
 .dot:active {
     background-color: blue;
@@ -59,6 +60,10 @@ p {
     border-radius: 50%;
     background-color: aquamarine;
 }
+.dot:hover {
+    background-color: blue;
+}
+
 input[name="r"] {
     width: 0;
     visibility: hidden;
