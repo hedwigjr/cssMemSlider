@@ -1,0 +1,92 @@
+body {
+}
+.wrapper{
+    height: 100%;
+    margin: 0 auto;
+}
+.containerForSlider {
+    margin: 0 auto;
+    max-width: 1000px;
+    max-height: 520px;
+    overflow: hidden;
+}
+.slide{
+    width: 25%;
+    transition: all .6s ease;
+    
+}
+.slideWraper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    max-height: 90%;
+    max-width: 90%;
+}
+.text {
+    width: 100%;
+}
+p {
+    text-align: center;
+}
+.containerForBottons {
+    display: flex;
+    justify-content: center;
+}
+.wrapperForSlider {
+    max-height: 500px;
+    width: 400%;
+    display: flex;
+}
+.bar {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.bar:hover {
+    cursor: pointer;
+}
+.dot:active {
+    background-color: blue;
+}
+.dot {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+input[name="r"] {
+    width: 0;
+    visibility: hidden;
+    margin: 0;
+}
+
+
+#r1:checked ~ .containerForSlider .wrapperForSlider .s1 {
+    margin-left: 0;
+}
+#r1:checked ~ .containerForBottons label:nth-child(1) .dot{
+    background-color: blue;
+}
+#r2:checked ~ .containerForSlider .wrapperForSlider .s1 {
+    margin-left: -25%;
+}
+#r2:checked ~ .containerForBottons label:nth-child(2) .dot{
+    background-color: blue;
+}
+#r3:checked ~  .containerForSlider .wrapperForSlider .s1 {
+    margin-left: -50%;
+}
+#r3:checked ~ .containerForBottons label:nth-child(3) .dot{
+    background-color: blue;
+}
+#r4:checked ~ .containerForSlider .wrapperForSlider .s1 {
+    margin-left: -75%;
+}
+#r4:checked ~ .containerForBottons label:nth-child(4) .dot{
+    background-color: blue;
+}
